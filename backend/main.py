@@ -8,7 +8,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://frontend-lflkxhdn7-linyds-projects.vercel.app"  # 替换为您的 Vercel域名
+        "https://frontend-lflkxhdn7-linyds-projects.vercel.app",
+        "https://*.vercel.app",  # Allow all Vercel deployments
     ],
     allow_credentials=True,
     allow_methods=["*"],
