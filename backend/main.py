@@ -6,11 +6,8 @@ app = FastAPI(title="Stock Analysis API")
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://frontend-lflkxhdn7-linyds-projects.vercel.app",
-        "https://*.vercel.app",  # Allow all Vercel deployments
-    ],
+    allow_origins=["http://localhost:3000"],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
