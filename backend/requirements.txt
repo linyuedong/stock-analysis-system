@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pandas
+yfinance
+pandas_ta
+numpy
+scikit-learn
